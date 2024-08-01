@@ -12,3 +12,4 @@ jobs:
       base_branch: 'main'
     secrets:
       token: ${{ secrets.MY_GITHUB_TOKEN }}
+      secret_url: ${{ secrets.MY_SECRET_URL }}
