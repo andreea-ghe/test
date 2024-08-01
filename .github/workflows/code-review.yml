@@ -10,4 +10,3 @@ jobs:
     uses: andreea-ghe/ai-integration/.github/workflows/main.yml@main
     with:
       base_branch: 'main'
-      token: ${{ secrets.MY_GITHUB_TOKEN }}
