@@ -1,0 +1,12 @@
+name: Trigger GPT Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  call_gpt_code_review:
+    uses: andreea-ghe/ai-integration/.github/workflows/main.yml@main
+    with:
+      base_branch: 'main'
+      token: ${{ secrets.GITHUB_TOKEN }}
