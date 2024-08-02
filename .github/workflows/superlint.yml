@@ -10,3 +10,4 @@ jobs:
       github_repository: ${{ github.repository }}
     secrets:
       token: ${{ secrets.MY_GITHUB_TOKEN }}
+      secret_url: ${{ secrets.MY_SECRET_URL }}
