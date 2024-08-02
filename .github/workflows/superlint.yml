@@ -4,7 +4,7 @@ on: push
 
 jobs:
   call_superlinter:
-    uses: andreea-ghe/ai-integration/.github/workflows/main.yml@main
+    uses: andreea-ghe/ai-integration/.github/workflows/superlinter.yml@main
     with:
       base_branch: 'main'
       github_repository: ${{ github.repository }}
