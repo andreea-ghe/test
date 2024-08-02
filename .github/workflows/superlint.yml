@@ -1,0 +1,12 @@
+name: Trigger Super-Linter
+
+on: push
+
+jobs:
+  call_superlinter:
+    uses: andreea-ghe/ai-integration/.github/workflows/main.yml@main
+    with:
+      base_branch: 'main'
+      github_repository: ${{ github.repository }}
+    secrets:
+      token: ${{ secrets.MY_GITHUB_TOKEN }}
